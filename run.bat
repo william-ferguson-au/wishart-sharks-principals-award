@@ -1,0 +1,1 @@
+java -jar target\SwimClubPrincipalsAward-1.1-SNAPSHOT.jar
