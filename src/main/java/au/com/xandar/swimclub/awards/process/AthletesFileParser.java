@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Parses a file containing a all the Athletes and compiles a List of Athletes with their ages.
@@ -48,7 +49,7 @@ public final class AthletesFileParser {
 	 */
 	public Map<String, Athlete> getAthletes() {
         // Copy into a new Map so that the Map we pass back is static and doesn't create new Athletes on the fly if an unknown name is supplied to #get. 
-        final Map<String, Athlete> athletes = new HashMap<String, Athlete>();
+        final Map<String, Athlete> athletes = new TreeMap<String, Athlete>();
         athletes.putAll(this.map);
 		return athletes;
 	}
@@ -80,11 +81,7 @@ public final class AthletesFileParser {
 				}
 
                 // Name has changed in TM6 to be "FirstName LastName" instead of "LastName, FirstName" but MM4 exports have remained the same.
-				final String name = tokens.get(NAME_OFFSET).toUpperCase();
-                final int breakingSpace = name.indexOf(" ");
-                final String firstName = name.substring(0, breakingSpace);
-                final String lastName = name.substring(breakingSpace + 1);
-                final String fullName = lastName + ", " + firstName;
+				final String fullName = tokens.get(NAME_OFFSET).toUpperCase();
 
                 final String gender = tokens.get(GENDER_OFFSET);
 				final String age = tokens.get(AGE_OFFSET);
