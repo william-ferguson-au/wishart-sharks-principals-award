@@ -3,8 +3,8 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>SwimClubPrincipalsAward</groupId>
-	<artifactId>SwimClubPrincipalsAward</artifactId>
+	<groupId>au.org.wishartswimclub</groupId>
+	<artifactId>PrincipalsAward</artifactId>
 	<version>1.4-SNAPSHOT</version>
 
     <properties>

@@ -1,1 +1,1 @@
-java -jar target\SwimClubPrincipalsAward-1.1-SNAPSHOT.jar
+java -jar target\PrincipalsAward-1.4-SNAPSHOT.jar
