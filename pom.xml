@@ -5,7 +5,7 @@
 	
 	<groupId>au.org.wishartswimclub</groupId>
 	<artifactId>PrincipalsAward</artifactId>
-	<version>1.4-SNAPSHOT</version>
+	<version>1.4</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,7 +14,7 @@
     <scm>
         <connection>scm:git:git@github.com:william-ferguson-au/wishart-sharks-principals-award.git</connection>
         <developerConnection>scm:git:git@github.com:william-ferguson-au/wishart-sharks-principals-award.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>PrincipalsAward-1.4</tag>
   </scm>
 
     <distributionManagement>
